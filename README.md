@@ -5,7 +5,7 @@ Integration with cloud ELK Stack provider (logz.io) used as a log storage that p
 ### Installing
 
 ```
-npm install adrianbudzynski/nestjs-logzio-logger --save
+npm install nestjs-logzio-logger --save
 ```
 
 Add to the AppModule in import section
