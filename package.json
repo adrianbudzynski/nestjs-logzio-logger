@@ -1,7 +1,9 @@
 {
   "name": "nestjs-logzio-logger",
   "version": "5.7.0",
-  "description": "Easy microservices friendly logger",
+  "description": "Integration with cloud ELK Stack provider (logz.io) used as a log storage that provides additional possibilities as tracking and analysing logs. Especially useful in distributed environments.",
+  "keywords": "logging, logzio, log analytics, nestjs, log, elk, logger",
+  "homepage": "https://github.com/adrianbudzynski/nestjs-logzio-logger/blob/master/README.md",
   "author": "Adrian Budzyński",
   "license": "MIT",
   "scripts": {
