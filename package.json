@@ -1,0 +1,40 @@
+{
+  "name": "nestjs-logzio-logger",
+  "version": "5.7.0",
+  "description": "Easy microservices friendly logger",
+  "author": "Adrian Budzyński",
+  "license": "MIT",
+  "scripts": {
+    "build": "rm -rf dist && tsc -p tsconfig.json",
+    "precommit": "lint-staged",
+    "prepublish:npm": "npm run build",
+    "publish:npm": "npm publish --access public",
+    "prepublish:next": "npm run build",
+    "publish:next": "npm publish --access public --tag next"
+  },
+  "devDependencies": {
+    "@nestjs/common": "^5.7.0",
+    "@nestjs/core": "^5.7.0",
+    "@types/node": "^7.0.41",
+    "husky": "^0.14.3",
+    "lint-staged": "^7.0.0",
+    "prettier": "^1.11.1",
+    "typescript": "^2.8.0",
+    "reflect-metadata": "^0.1.12"
+  },
+  "dependencies": {
+    "uuid": "3.3.2",
+    "winston": "^3.2.1",
+    "winston-logzio": "^4.0.1"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^5.7.0",
+    "@nestjs/core": "^5.7.0"
+  },
+  "lint-staged": {
+    "*.ts": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
